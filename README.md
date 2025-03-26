@@ -1,0 +1,2 @@
+# airdy
+AI Ready
