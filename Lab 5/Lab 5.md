@@ -53,8 +53,7 @@ The implementation covers the following scenarios:
     ![A close-up of a white background AI-generated content may be
     incorrect.](./media/image5.png)
 
-4.  Similarly, register the Resource providers
-    +++Microsoft.StreamAnalytics+++,+++ Microsoft.PolicyInsights+++ and
+4.  Similarly, register the Resource providers +++Microsoft.StreamAnalytics+++, +++Microsoft.PolicyInsights+++ and
     +++Microsoft.Cdn+++.
 
 5.  Go to the Home page of the Azure portal, select Resource Groups and
@@ -77,7 +76,7 @@ incorrect.](./media/image7.png)
 incorrect.](./media/image8.png)
 
 8.  Click on **+ Select members**. In the **Select members** dialog that
-    opens, search for <+++@lab.CloudPortalCredential(User1).Username>+++
+    opens, search for +++@lab.CloudPortalCredential(User1).Username+++
     and select. Click on **Select**. Click on **Next** to move to the
     next screen.
 
@@ -293,7 +292,7 @@ incorrect.](./media/image32.png)
 
 9.  From the resource list of the Resource group, search for and select
     the storage account,
-    +++st[@lab.LabInstance.Id](mailto:BASE_NAME=@lab.LabInstance.Id)+++
+    +++st@lab.LabInstance.Id+++
 
     ![](./media/image39.png)
 
@@ -310,13 +309,11 @@ incorrect.](./media/image40.png)
 incorrect.](./media/image41.png)
 
 12. Similarly **Approve** the pending approvals for the storage account
-    +++stml[@lab.LabInstance.Id](mailto:BASE_NAME=@lab.LabInstance.Id)+++,
-    +++oai-[@lab.LabInstance.Id](mailto:BASE_NAME=@lab.LabInstance.Id)+++,
-    +++ai[@lab.LabInstance.Id](mailto:BASE_NAME=@lab.LabInstance.Id)+++
+    +++stml@lab.LabInstance.Id+++,
+    +++oai-@lab.LabInstance.Id+++,
+    +++ai@lab.LabInstance.Id+++
 
-13. The
-    ai-search[@lab.LabInstance.Id](mailto:BASE_NAME=@lab.LabInstance.Id)
-    resource -\> Networking -\> Shared private access, should look like
+13. The ai-search@lab.LabInstance.Id resource -> Networking -> Shared private access, should look like
     the one in the screen shot below.
 
     ![A screenshot of a computer AI-generated content may be
@@ -379,11 +376,9 @@ incorrect.](./media/image49.png)
 7.  Select **Confirm and continue** and then **Confirm and start
     browsing** in the next screen.
 
-    ![A screenshot of a computer error AI-generated content may be
-    incorrect.](./media/image50.png)
+    ![A screenshot of a computer error AI-generated content may be incorrect.](./media/image50.png)
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image51.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image51.png)
 
 8.  From the VM’s browser, login to the Azure portal at
     +++https://portal.azure.com+++ using,
@@ -395,65 +390,54 @@ incorrect.](./media/image49.png)
 9.  Search for +++hub+++ and select the **aihub-lab.LabInstance.Id**
     resource.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image52.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image52.png)
 
 10. Select Launch **Azure AI Foundry**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image53.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image53.png)
 
 11. Select **Connected resources** from the left pane. We need to create
     a new AI Search Connection. Select **+ New connection**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image54.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image54.png)
 
 12. Select **Azure AI Search**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image55.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image55.png)
 
 13. In the **Connect an Azure AI Search resource** pane, click on **Add
     connection**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image56.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image56.png)
 
 14. Once connected, **Close** the Connect an Azure AI Search resource
     dialog. (Reduce the **Zoom** **size** of the browser if the Close
     button is not visible).
 
-    ![A screenshot of a search engine AI-generated content may be
-incorrect.](./media/image57.png)
+    ![A screenshot of a search engine AI-generated content may be incorrect.](./media/image57.png)
 
 15. In the **Manage connected resources in this hub** screen, confirm
     that the **aisearch** resource is now available in the connected
     resources list.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image58.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image58.png)
 
 16. Select **Create project** to create a new project in the **Azure AI
     Foundry**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image59.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image59.png)
 
-17. Give the project name as <+++project-@lab.LabInstance.Id>+++ and
+17. Give the project name as +++project-@lab.LabInstance.Id+++ and
     select **Create project**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image60.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image60.png)
 
 18. Once the project is created, click on **Close** in the **Explore and
     experiment** dialog.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image61.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image61.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image62.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image62.png)
 
 19. Select **Playgrounds** from the left navigation pane and select the
     **Try the Chat playground** option.
@@ -548,7 +532,7 @@ incorrect.](./media/image75.png)
 
     - Endpoint name - +++ept-@lab.LabInstance.Id+++
 
-    - Deployment name - <+++ept-@lab.LabInstance.Id-1>+++
+    - Deployment name - +++ept-@lab.LabInstance.Id-1+++
 
     - Virtual machine – Select **Standard_DS3_v2**
 
@@ -581,16 +565,14 @@ incorrect.](./media/image81.png)
 
     +++curl -s https://ipinfo.io/ip+++
 
-    ![A screenshot of a computer program AI-generated content may be
-    incorrect.](./media/image82.png)
+    ![A screenshot of a computer program AI-generated content may be incorrect.](./media/image82.png)
 
 4.  From the Storage account, <st@lab.LabInstanceId>, select Networking
     under **Security + networking**. **Under Firewalls and virtual
     networks**, select the option **Enabled from selected virtual
     networks and IP addresses**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image83.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image83.png)
 
 5.  Scroll down and under the **Firewall** section, select **Add your
     Client IP address** and then add the **Cloud Shell’s IP address**
@@ -650,11 +632,9 @@ incorrect.](./media/image85.png)
 
     ```
 
-    ![A screenshot of a computer program AI-generated content may be
-    incorrect.](./media/image87.png)
+    ![A screenshot of a computer program AI-generated content may be incorrect.](./media/image87.png)
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image88.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image88.png)
 
 ### Task 5: Validate the web app
 
@@ -671,10 +651,10 @@ incorrect.](./media/image85.png)
 
 3.  Create an A record for DNS. From your VM, navigate to
     **C:\Windows\System32\drivers\etc\hosts** and add the following
-    entry to the end of it, replacing \<APPGW_PUBLIC_IP\> with the
+    entry to the end of it, replacing < APPGW_PUBLIC_IP > with the
     output received in the last step.
 
-    +++<APPGW_PUBLIC_IP> www.contoso.com+++
+    +++< APPGW_PUBLIC_IP > www.contoso.com+++
 
 4.  Browse to the site, +++https://www.contoso.com+++
 
