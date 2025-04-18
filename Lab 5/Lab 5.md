@@ -693,7 +693,9 @@ incorrect.](./media/image85.png)
     ![](./media/image96.png)
  
 
-7.	Once all the questions are answered, you will receive the **results** based on your requirements, categorized appropriately with recommendations for each.  
+7. There are a total of 40 questions. Select an answer for each one of them based on your scenario.
+   
+8. Once all the questions are answered, you will receive the **results** based on your requirements, categorized appropriately with recommendations for each.  
 
     ![](./media/image97.png)
   	
