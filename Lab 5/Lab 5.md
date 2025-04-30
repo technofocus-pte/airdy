@@ -554,32 +554,34 @@ incorrect.](./media/image81.png)
 2.  You must authorize your user to upload a blob to the storage
     account.
 
-3.  Execute the below command to find the IPAddress of the
+3.  Open the **CloudShell** from the Azure portal and execute the below command to find the IPAddress of the
     **CloudShell**.
 
     +++curl -s https://ipinfo.io/ip+++
 
+    Make a note of the ipaddress in a notepad.
+    
     ![A screenshot of a computer program AI-generated content may be incorrect.](./media/image82.png)
 
-4.  From the Storage account, <st@lab.LabInstanceId>, select Networking
+5.  From the Storage account, st@lab.LabInstanceId, select Networking
     under **Security + networking**. **Under Firewalls and virtual
     networks**, select the option **Enabled from selected virtual
     networks and IP addresses**.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](./media/image83.png)
 
-5.  Scroll down and under the **Firewall** section, select **Add your
+6.  Scroll down and under the **Firewall** section, select **Add your
     Client IP address** and then add the **Cloud Shell’s IP address**
     under the **Address range**.
 
     ![](./media/image84.png)
 
-6.  Scroll up and **Save** the changes.
+7.  Scroll up and **Save** the changes.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image85.png)
 
-7.  Execute the below command to assign **Storage Blob Contributor**
+8.  From the Cloud Shell, execute the below command to assign **Storage Blob Contributor**
     role to the user in order to give the logged-in user permission to
     upload a blob.
 
@@ -607,7 +609,7 @@ incorrect.](./media/image85.png)
 
     ![](./media/image86.png)
 
-8.  Execute the below command to upload the zip file
+9.  Execute the below command to upload the zip file
     ./website/chatui.zip to the existing deploy container and tell the
     web app to restart.
 
