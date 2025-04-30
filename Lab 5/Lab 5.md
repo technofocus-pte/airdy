@@ -406,7 +406,7 @@ incorrect.](./media/image49.png)
 
 14. Once connected, **Close** the Connect an Azure AI Search resource
     dialog. (Reduce the **Zoom** **size** of the browser if the Close
-    button is not visible).
+    button is not visible. It should be visible at 67%).
 
     ![A screenshot of a search engine AI-generated content may be incorrect.](./media/image57.png)
 
