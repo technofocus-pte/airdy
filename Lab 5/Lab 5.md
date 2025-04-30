@@ -66,14 +66,12 @@ incorrect.](./media/image6.png)
     down** next to **Add** and click on **Add role assignment** to add a
     new role to your account.
 
-    ![A screenshot of a computer screen AI-generated content may be
-incorrect.](./media/image7.png)
+    ![A screenshot of a computer screen AI-generated content may be incorrect.](./media/image7.png)
 
 7.  Select **Privileged administrator roles**, search for
     +++**owner**+++, select **LOD owner** and click on **Next**.
 
-    ![A screenshot of a computer screen AI-generated content may be
-incorrect.](./media/image8.png)
+    ![A screenshot of a computer screen AI-generated content may be incorrect.](./media/image8.png)
 
 8.  Click on **+ Select members**. In the **Select members** dialog that
     opens, search for +++@lab.CloudPortalCredential(User1).Username+++
@@ -102,11 +100,9 @@ incorrect.](./media/image12.png)
 11. Select **Review + assign** to get the role assigned and wait for a
     success message.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image13.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image13.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image14.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image14.png)
 
 ### Task 2: Create CloudShell storage and clone the repo
 
