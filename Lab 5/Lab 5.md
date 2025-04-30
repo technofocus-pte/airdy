@@ -291,8 +291,7 @@ incorrect.](./media/image32.png)
 
     ![](./media/image39.png)
 
-10. Select the **Private endpoint connections** tab, select the one
-    whose Connection state is in **Pending** state and click on
+10. Select Networking under Security + networkin from the left pane. Select the **Private endpoint connections** tab, select the **Connection name** whose Connection state is in **Pending** state and click on
     **Approve** to approve it.
 
     ![A screenshot of a computer AI-generated content may be
