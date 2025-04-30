@@ -1,4 +1,3 @@
-
 # Azure AI Foundry end-to-end baseline reference implementation
 
 **Introduction:**
