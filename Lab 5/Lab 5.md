@@ -381,7 +381,7 @@ incorrect.](./media/image49.png)
 
     - Password - +++@lab.CloudPortalCredential(User1).Password+++
 
-9.  Search for +++hub+++ and select the **aihub-lab.LabInstance.Id**
+9.  From the **ResourceGroup1** overview page, search for +++hub+++ and select the **aihub-@lab.LabInstance.Id**
     resource.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](./media/image52.png)
