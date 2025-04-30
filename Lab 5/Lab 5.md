@@ -379,7 +379,7 @@ incorrect.](./media/image49.png)
 
     - Username - +++@lab.CloudPortalCredential(User1).Username+++
 
-    - Password - <+++@lab.CloudPortalCredential(User1).Password>+++
+    - Password - +++@lab.CloudPortalCredential(User1).Password+++
 
 9.  Search for +++hub+++ and select the **aihub-lab.LabInstance.Id**
     resource.
