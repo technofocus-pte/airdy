@@ -235,7 +235,7 @@ incorrect.](./media/image29.png)
 
     ```
 
-    The deployment takes around 45 minutes to complete
+    The deployment takes around 20 minutes to complete
 
     ![A screenshot of a computer screen AI-generated content may be
 incorrect.](./media/image30.png)
