@@ -23,6 +23,8 @@ The implementation covers the following scenarios:
     executable flow to an Azure AI Foundry online endpoint. The client
     UI that is hosted in Azure App Service accesses the deployed flow.
 
+    >[!Alert] Please paste the code blocks to a note pad and then paste it to the Shell.
+    
 ## Exercise 1: Complete the set up and Deploy the infrastructure
 
 ### Task 1: Register Resource providers and assign roles
@@ -590,7 +592,9 @@ incorrect.](./media/image85.png)
     BASE_NAME=@lab.LabInstanceId
     RESOURCE_GROUP=@lab.CloudResourceGroup(ResourceGroup1).Name
     NAME_OF_STORAGE_ACCOUNT="$STORAGE_ACCOUNT_PREFIX$BASE_NAME"
-
+    ```
+    
+    ```
     # Get your signed-in user's object ID
     USER_ID=$(az ad signed-in-user show --query id -o tsv)
 
@@ -599,7 +603,9 @@ incorrect.](./media/image85.png)
     --name $STORAGE_ACCOUNT_PREFIX$BASE_NAME \
     --resource-group $RESOURCE_GROUP \
     --query id -o tsv)
-
+    ```
+    
+    ```
     # Assign the required role
     az role assignment create \
     --assignee $USER_ID \
@@ -645,58 +651,25 @@ incorrect.](./media/image85.png)
     echo APPGW_PUBLIC_IP: $APPGW_PUBLIC_IP
     ```
 
-3.  Create an A record for DNS. From your VM, navigate to
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image98.png)
+    
+4.  Create an A record for DNS. From your VM, navigate to
     **C:\Windows\System32\drivers\etc\hosts** and add the following
     entry to the end of it, replacing < APPGW_PUBLIC_IP > with the
     output received in the last step.
 
     +++< APPGW_PUBLIC_IP > www.contoso.com+++
 
-4.  Browse to the site, +++https://www.contoso.com+++
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image99.png)
+    
+6.  Browse to the site, +++https://www.contoso.com+++
 
-5.  It may take up to a few minutes for the App Service to start
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image100.png)
+    
+8.  It may take up to a few minutes for the App Service to start
     properly. A TLS warning will be present due to using a self-signed
     certificate. You can ignore it or import the self-signed cert
     (appgw.pfx) to your user's trusted root store.
-
-## Exercise 3:  WAF AI Workload assessment
-
-1.	From a browser, navigate to +++https://learn.microsoft.com/en-us/assessments/ea306cce-c7fa-4a2b-89a6-bfefba6a9cf4/+++ and select **Start Assessment**.
-
-    ![](./media/image89.png)
-  	
-2.	Select **Sign in** to start.
-
-     ![](./media/image90.png)
-  	
-3.	Signing in using personal id is encouraged so that the data can be retained.
-
-4.	There are **different categories** of questions.
-
-5.	Select an option for each of the questions based on your workload requirements like in the screenshots below.
-
-    ![](./media/image91.png)
-
-    ![](./media/image92.png)
-
-    ![](./media/image93.png)
- 
-    ![](./media/image94.png)
-  	
-    ![](./media/image95.png)
-
- 
-    ![](./media/image96.png)
- 
-
-7. There are a total of 40 questions. Select an answer for each one of them based on your scenario.
-   
-8. Once all the questions are answered, you will receive the **results** based on your requirements, categorized appropriately with recommendations for each.  
-
-    ![](./media/image97.png)
-  	
-9.	Scroll down to know more details on the same.
-
 
 **Summary:**
 
