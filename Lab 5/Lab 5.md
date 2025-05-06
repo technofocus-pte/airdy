@@ -574,8 +574,11 @@ incorrect.](./media/image81.png)
 2.  You must authorize your user to upload a blob to the storage
     account.
 
-3.  Open the **CloudShell** from the Azure portal and execute the below command to find the IPAddress of the
-    **CloudShell**.
+3.  Open the **CloudShell** from the Azure portal.
+
+4.  Execute the command +++cd aistudio-end-to-end-baseline-architecture/+++ to navigate to the cloned folder.
+  
+5.  Execute the below command to find the IPAddress of the **CloudShell**.
 
     +++curl -s https://ipinfo.io/ip+++
 
