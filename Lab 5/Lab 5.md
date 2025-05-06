@@ -487,7 +487,7 @@ incorrect.](./media/image68.png)
     >[!Note] **Note:** If you face a **CloudDependencyPermission** error, cancel the
     cloning and redo it with a different name **after** waiting for **few
     minutes**.
-
+    >
     ![](./media/image69.png)
 
 3.  Update the values in **extract_query_from_question** as below.
