@@ -378,14 +378,30 @@ incorrect.](./media/image49.png)
 
     ![A screenshot of a computer AI-generated content may be incorrect.](./media/image51.png)
 
-8.  From the VM’s browser, login to the Azure portal at
+8.  From the VM's browser, select **Settings**.
+
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image102.png)
+
+9.  Select **Cookies and site permissions**.
+
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image103.png)
+
+10. Select **Pop-up permissions**.
+
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image106.png)
+
+11. Enable the toggle on **Blocked(recommended)**.
+
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image107.png)
+       
+12. From a new tab, login to the Azure portal at
     +++https://portal.azure.com+++ using,
 
     - Username - +++@lab.CloudPortalCredential(User1).Username+++
 
     - Password - +++@lab.CloudPortalCredential(User1).Password+++
 
-9.  From the **ResourceGroup1** overview page, search for +++hub+++ and select the **aihub-@lab.LabInstance.Id**
+13. From the **ResourceGroup1** overview page, search for +++hub+++ and select the **aihub-@lab.LabInstance.Id**
     resource.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](./media/image52.png)
