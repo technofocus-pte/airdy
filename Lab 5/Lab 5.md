@@ -309,7 +309,9 @@ incorrect.](./media/image41.png)
     +++oai-@lab.LabInstance.Id+++,
     +++ai@lab.LabInstance.Id+++
 
-13. The ai-search@lab.LabInstance.Id resource -> Networking -> Shared private access, should look like
+    >[!Note] **Note:** For the oai-@lab.LabInstance.Id and ai@lab.LabInstance.Id resources, **Networking** is present under **Resource Management** in the left pane.
+
+14. The ai-search@lab.LabInstance.Id resource -> Settings -> Networking -> Shared private access, should look like
     the one in the screen shot below.
 
     ![A screenshot of a computer AI-generated content may be
