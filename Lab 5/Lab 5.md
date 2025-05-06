@@ -565,7 +565,7 @@ incorrect.](./media/image81.png)
     
     ![A screenshot of a computer program AI-generated content may be incorrect.](./media/image82.png)
 
-5.  From the Storage account, st@lab.LabInstanceId, select Networking
+5.  From the Storage account, st@lab.LabInstance.Id, select Networking
     under **Security + networking**. **Under Firewalls and virtual
     networks**, select the option **Enabled from selected virtual
     networks and IP addresses**.
@@ -589,7 +589,7 @@ incorrect.](./media/image85.png)
 
     ```
     STORAGE_ACCOUNT_PREFIX=st
-    BASE_NAME=@lab.LabInstanceId
+    BASE_NAME=@lab.LabInstance.Id
     RESOURCE_GROUP=@lab.CloudResourceGroup(ResourceGroup1).Name
     NAME_OF_STORAGE_ACCOUNT="$STORAGE_ACCOUNT_PREFIX$BASE_NAME"
     ```
