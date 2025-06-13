@@ -436,24 +436,30 @@ incorrect.](./media/image49.png)
 
     ![A screenshot of a computer AI-generated content may be incorrect.](./media/image58.png)
 
-16. Select **Create project** to create a new project in the **Azure AI
-    Foundry**.
+16. Select the **Azure AI Foundry** home.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image59.png)
+    ![image](https://github.com/user-attachments/assets/f5733cb6-08a8-433c-b60d-e93641029e21)
 
-17. Give the project name as +++project-@lab.LabInstance.Id+++ and
-    select **Create project**.
+17. Select **+ Create new**.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image60.png)
+    ![image](https://github.com/user-attachments/assets/4bdc669f-13f9-4eb7-9c38-59123d69f553)
 
-18. Once the project is created, click on **Close** in the **Explore and
+18. Select **AI hub rresource** option and click on **Next**.
+
+    ![image](https://github.com/user-attachments/assets/2c7393d2-bc07-4c23-a1c3-c14be75fdf9c)
+
+19. Give the project name as +++project-@lab.LabInstance.Id+++, select your hub resource, +++aihub-@lab.LabInstance.Id+++ and select **Create**.
+
+    ![image](https://github.com/user-attachments/assets/d81ca551-fa90-48ae-ab39-843426f5ec64)
+
+20. Once the project is created, click on **Close** in the **Explore and
     experiment** dialog.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](./media/image61.png)
 
     ![A screenshot of a computer AI-generated content may be incorrect.](./media/image62.png)
 
-19. Select **Playgrounds** from the left navigation pane and select the
+21. Select **Playgrounds** from the left navigation pane and select the
     **Try the Chat playground** option.
 
     ![A screenshot of a computer AI-generated content may be
@@ -465,7 +471,7 @@ incorrect.](./media/image49.png)
     ![A screenshot of a chat AI-generated content may be
     incorrect.](./media/image65.png)
 
-20. Ask questions and chat in the playground here. Ask a question like
+22. Ask questions and chat in the playground here. Ask a question like
     +++What is Azure OpenAI?+++ and look for the response from the
     model.
 
