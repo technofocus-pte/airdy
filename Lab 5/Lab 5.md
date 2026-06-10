@@ -34,7 +34,7 @@ The implementation covers the following scenarios:
 
     - Username - +++@lab.CloudPortalCredential(User1).Username+++
 
-    - Password - +++@lab.CloudPortalCredential(User1).Password+++
+    - TAP - +++@lab.CloudPortalCredential(User1).AccessToken+++
 
 2.  Select **Subscriptions** and select your assigned subscription.
 
@@ -54,7 +54,7 @@ The implementation covers the following scenarios:
     ![A close-up of a white background AI-generated content may be
     incorrect.](./media/image5.png)
 
-4.  Similarly, register the Resource providers +++Microsoft.StreamAnalytics+++, +++Microsoft.PolicyInsights+++ and
+4.  Similarly, register the Resource providers +++Microsoft.StreamAnalytics+++, +++Microsoft.PolicyInsights+++, +++Microsoft.Storage+++, +++Microsoft.ContainerInstance+++ and
     +++Microsoft.Cdn+++.
 
 5.  Go to the Home page of the Azure portal, select Resource Groups and
@@ -85,7 +85,7 @@ incorrect.](./media/image9.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image10.png)
 
-9.  In the Add role assignment – Conditions tab, select the **Allow user
+9.  In the Add role assignment - Conditions tab, select the **Allow user
     to assign all roles (highly privileged)** option and click on
     **Next**.
 
@@ -223,6 +223,19 @@ incorrect.](./media/image29.png)
 10. Right click, select **Save** and then **Quit** the editor.
 
 ### Task 4: Deploy the infrastructure
+
+1. Excecute the following in cloud shell to select the correct Windows 11 SKU:
+	
+    +++sed -i 's/win11-23h2-pro/win11-24h2-pro/g' ./infra-as-code/bicep/jumpbox.bicep+++
+
+1. Excecute the following in cloud shell to fix the race condition for AIServices:
+	
+    +++sed -i 's/resource aiServicesPrivateEndpoint '\''Microsoft.Network\/privateEndpoints@2023-11-01'\'' = {/resource aiServicesPrivateEndpoint '\''Microsoft.Network\/privateEndpoints@2023-11-01'\'' = {\n  dependsOn: [\n    model\n  ]/' ./infra-as-code/bicep/aiservices.bicep+++
+
+1. Excecute the following in cloud shell to fix the race condition for OpenAI:
+	
+    +++sed -i 's/resource openaiPrivateEndpoint '\''Microsoft.Network\/privateEndpoints@2022-11-01'\'' = {/resource openaiPrivateEndpoint '\''Microsoft.Network\/privateEndpoints@2022-11-01'\'' = {\n  dependsOn: [\n    openAIDiagSettings\n  ]/' ./infra-as-code/bicep/openai.bicep+++
+ 
 
 1.  Execute the following command to deploy the infrastructure.
 
@@ -399,7 +412,7 @@ incorrect.](./media/image49.png)
 
     - Username - +++@lab.CloudPortalCredential(User1).Username+++
 
-    - Password - +++@lab.CloudPortalCredential(User1).Password+++
+    - Password - +++@lab.CloudPortalCredential(User1).AccessToken+++
 
 13. From the **ResourceGroup1** overview page, search for +++hub+++ and select the **aihub-@lab.LabInstance.Id**
     resource.
@@ -498,10 +511,10 @@ incorrect.](./media/image68.png)
 
 3.  Update the values in **extract_query_from_question** as below.
 
-    - Connection – Select
+    - Connection - Select
     **aihub-@lab.LabInstance.Id-connection-Aiservices_aoai**
 
-    - deployment_name – Select **gpt4**
+    - deployment_name - Select **gpt4**
 
     - max_tokens - +++256+++
 
@@ -509,12 +522,12 @@ incorrect.](./media/image68.png)
 
 4.  Update the values in **augmented_chat** as below.
 
-    - Connection – Select
+    - Connection - Select
     **aihub-@lab.LabInstance.Id-connection-Aiservices_aoai**
 
     - deployment_name - **gpt4**
 
-    - max_tokens – +++256+++
+    - max_tokens - +++256+++
 
     ![A screenshot of a chat AI-generated content may be
 incorrect.](./media/image71.png)
@@ -554,7 +567,7 @@ incorrect.](./media/image75.png)
 
     - Deployment name - +++ept-@lab.LabInstance.Id-1+++
 
-    - Virtual machine – Select **Standard_DS3_v2**
+    - Virtual machine - Select **Standard_DS3_v2**
 
     ![](./media/image78.png)
 
@@ -600,7 +613,7 @@ incorrect.](./media/image81.png)
     ![A screenshot of a computer AI-generated content may be incorrect.](./media/image83.png)
 
 6.  Scroll down and under the **Firewall** section, select **Add your
-    Client IP address** and then add the **Cloud Shell’s IP address**
+    Client IP address** and then add the **Cloud Shell's IP address**
     under the **Address range**.
 
     ![](./media/image84.png)
